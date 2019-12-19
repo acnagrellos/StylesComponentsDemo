@@ -1,31 +1,68 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# Javascript ES6
+## Available Scripts
 
-1. Crea un proyecto con create-react-app.
-2. Haz que el componente de App.js sea de tipo funcional.
-3. Crea una estructura de componentes en fractal, de manera que en la estructura de componentes cada uno esté en la carpeta de quien lo contiene. Para ello crearemos un componente HeaderApp, otro MainApp y otro FooterApp. Todos los componentes deberán ser funcionales. Que los componentes solo tengan un div que diga "Soy el X de la App". Importa y exporta los componentes por nombre y no por defecto.
-4. Añade como propiedades al componente Header el nombre de la app y una url del logo. Elegir el logo que querais. Destructura las props al recibirlas en el HeaderApp. Añade al Header una imagen de logo y un nombre dentro de un elemento header. En el nombre de la app deberá poner Esta es la app + la prop del nombre.
-5. Añade un array de links de esta manera:
+In the project directory, you can run:
 
-```
-const links = [
-    { link: 'https://www.ajedreztomelloso.com/', text: 'Blog' },
-    { link: 'https://www.ajedreztomelloso.com/', text: 'Prensa' },
-    { link: 'https://www.ajedreztomelloso.com/', text: 'Contacta' },
-    { link: 'https://www.ajedreztomelloso.com/', text: 'Términos' }
-]
-```
+### `yarn start`
 
-Deberá ser una prop que reciba el footer. Además añade una prop que sea copyright. Ambas las deberás destructurar en las props del footer.
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-6. Haz que el componente de MainApp sea una fat arrow function que devuelva un div que ponga "Esto es el Main".
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
 
-# Emotion
+### `yarn test`
 
-1. Instalar Emotion en el proyecto.
-2. Añadir emotion-reset al proyecto como estilo global.
-3. Añadir un style-component al MainComponent que sea un elemento main con el fondo azul.
-4. Añadir un componente ul como style componente que tenga fondo rojo en el Footer. Añadir otro componente que sea un <a> dentro de un <li> para los links con el fondo blanco. Tener otro a por fuera que engloble al Copyright. El <a> del Copyright no tiene que tener el fondo blanco.
-5. Crear un tema para la aplicacion en el que se añada el color de la aplicacion. Este tema deberá estar en una carpeta styles dentro de la carpeta src.
-6. Crear una carpeta de componentes generics donde hagamos un botón.
+Launches the test runner in the interactive watch mode.<br />
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `yarn build`
+
+Builds the app for production to the `build` folder.<br />
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.<br />
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `yarn eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+
+### Analyzing the Bundle Size
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+
+### Making a Progressive Web App
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+
+### Advanced Configuration
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+
+### Deployment
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+
+### `yarn build` fails to minify
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
